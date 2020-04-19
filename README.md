@@ -4,7 +4,20 @@ Simple boiler-plate project that contains all of the required bits and pieces to
 get a basic Typescript + Webpack project started for serving as a compiled
 javascript bundle file.
 
-## Installation
+## Using this boiler plate for a new project
+
+Simplest way to get a clean slate to start from is just to clone the existing
+repo, delete the `.git/` dir and then re-initialise git in the new project.
+
+- `git clone https://github.com/matt1/TsBoilerPlate.git MyNewProject`
+- `cd MyNewProject`
+- `rm -rf .git/`
+- `git init`
+
+## Set up
+
+You'll need to install the dependencies for this project with the following
+command:
 
 `npm install copy-webpack-plugin ts-loader typescript`
 
