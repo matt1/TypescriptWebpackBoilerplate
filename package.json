@@ -1,0 +1,17 @@
+{
+  "name": "tsboilerplate",
+  "version": "0.0.1",
+  "description": "TS Project boiler plate",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
