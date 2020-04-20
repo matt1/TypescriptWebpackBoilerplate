@@ -17,9 +17,9 @@ repo, delete the `.git/` dir and then re-initialise git in the new project.
 ## Set up
 
 You'll need to install the dependencies for this project with the following
-command:
+command (dependencies are specified in package.json).
 
-`npm install copy-webpack-plugin ts-loader typescript`
+`npm install`
 
 ## Building the compiled bundle
 
