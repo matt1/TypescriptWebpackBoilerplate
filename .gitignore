@@ -1,10 +1,5 @@
 # Ignore npm modules themselves
 node_modules/
 
-# Ignore the package-lock file for the boiler-plate. This is because for this
-# project we always want the latest versions of all packages and don't care
-# about specific versions.
-package-lock.json
-
-# Ignore generated bundle.js
-dist/bundle.js
+# Ignore generated dist
+dist/
