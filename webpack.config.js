@@ -11,9 +11,16 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-        {from: 'src/index.html', to: 'index.html'},
-        {from: 'src/styles', to: 'styles'},
-    ]),
+      {
+        from: '**/*',
+        context: path.resolve(__dirname, 'src'),
+        globOptions: {
+          ignore: [
+            '**/scripts/**',
+          ]
+        },
+      },
+  ]),
   ],
   resolve: {
     extensions: ['.ts', '.js' ],
