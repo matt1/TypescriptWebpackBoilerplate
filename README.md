@@ -4,6 +4,14 @@ Simple boiler-plate project that contains all of the required bits and pieces to
 get a basic Typescript + Webpack project started for serving as a compiled
 javascript bundle file.
 
+## Features:
+* Compile all Typescript files & modules (and their dependencies) into a single
+`bundle.js` file.
+* Copy all static resources from `src/**` into `dist/`
+  * Ignores `script/` since this will be bundled.
+  * This means any and all `*.html` (index.html, about.html etc) files and any
+  sub directories (e.g. `style/`, `images/` etc) will be copied over as-is.
+
 ## Using this boiler plate for a new project
 
 Simplest way to get a clean slate to start from is just to clone the existing
