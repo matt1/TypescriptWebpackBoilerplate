@@ -26,5 +26,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npx webpack
-    - run: echo ${{hashFiles('dist/**')}}
+    - run: test -f bundle.js && test -f dist/index.html && test -f dist/static.html && test -f dist/styles/styles.css
 
