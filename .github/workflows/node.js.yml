@@ -27,5 +27,6 @@ jobs:
     - run: npm install
     - run: npx webpack
     - run: test -f dist/bundle.js && test -f dist/index.html && test -f dist/static.html && test -f dist/styles/styles.css
+    - run: find dist -type f -exec md5sum {} +
     - run: md5sum -c hashes.md5
 
