@@ -34,3 +34,13 @@ in this directory could then be uploaded to a server for instance.
 
 This will run a live-reload server available on `localhost:8080` for local
 development.
+
+## Testing
+
+To regenerate the MD5 hashes for the files run
+
+`npx webpack && find dist -type f -exec md5sum {} + > hashes.md5`
+
+You can then check that generation still happens correctly with
+
+`md5sum -c hashes.md5`
