@@ -1,8 +1,8 @@
-# TS Boiler Plate
+# Typescript + Webpack Boiler Plate
 
 Simple boiler-plate project that contains all of the required bits and pieces to
 get a basic Typescript + Webpack project started for serving as a compiled
-javascript bundle file.
+javascript bundle file, complete with static HTML, images, and CSS etc.
 
 ## Features:
 * Compile all Typescript files & modules (and their dependencies) into a single
