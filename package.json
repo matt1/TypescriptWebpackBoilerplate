@@ -4,7 +4,7 @@
   "description": "TS Project boiler plate",
   "main": "webpack.config.js",
   "dependencies": {
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^6.0.2",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3"
   },

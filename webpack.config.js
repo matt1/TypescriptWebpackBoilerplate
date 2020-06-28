@@ -10,17 +10,19 @@ module.exports = {
     rules: [{test: /\.ts$/, use: 'ts-loader'}]
   },
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: '**/*',
-        context: path.resolve(__dirname, 'src'),
-        globOptions: {
-          ignore: [
-            '**/scripts/**',
-          ]
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: '**/*',
+          context: path.resolve(__dirname, 'src'),
+          globOptions: {
+            ignore: [
+              '**/scripts/**',
+            ]
+          },
         },
-      },
-  ]),
+      ]
+    }),
   ],
   resolve: {
     extensions: ['.ts', '.js' ],
