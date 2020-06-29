@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "dependencies": {
     "copy-webpack-plugin": "^6.0.2",
-    "ts-loader": "^7.0.0",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.8.3"
   },
   "devDependencies": {},
