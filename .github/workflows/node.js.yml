@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npx webpack
+    - run: npm install --save-dev webpack
     - run: find dist -type f -exec md5sum {} +
     - run: md5sum -c hashes.md5
 
