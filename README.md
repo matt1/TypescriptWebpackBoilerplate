@@ -51,6 +51,8 @@ This repo does some very basic checks to ensure that new changes do not break th
 
 `npx webpack && find dist -type f -exec md5sum {} + > hashes.md5`
 
-N.B. these files use unix-style line-endings (LF only) - make sure your editor is not using CRLF or the hashes will be wrong. To check that the generated files match expectations, run:
+N.B. these files use unix-style line-endings (LF only) - make sure your editor is not using CRLF or the hashes will be wrong. You might need to toggle from LF -> CRLF -> LF to ensure all are converted.
+
+To check that the generated files match expectations, run:
 
 `md5sum -c hashes.md5`
